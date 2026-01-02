@@ -3,38 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>峻國建設公司</title>
 
-  <title>結構小教室</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap CDN (快速排版與樣式) -->
-  <link 
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" 
-    rel="stylesheet"
-  >
-
+  <!-- 自訂 CSS -->
   <style>
     body {
-      font-family: "Noto Sans", sans-serif;
+      font-family: "Noto Sans TC", sans-serif;
     }
+
+    /* Hero Banner */
     .hero {
-      background-color: #f8f9fa;
-      padding: 80px 0;
+      background: url('https://picsum.photos/1600/600?random=1') no-repeat center center;
+      background-size: cover;
+      color: #fff;
       text-align: center;
+      padding: 120px 20px;
     }
     .hero h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       font-weight: bold;
     }
     .hero p {
       font-size: 1.2rem;
-      color: #555;
     }
-    .card img {
+
+    /* Section Titles */
+    h2 {
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    /* Card images */
+    .card-img-top {
+      height: 200px;
       object-fit: cover;
-      height: 180px;
     }
+
+    /* Footer */
     footer {
-      background: #333;
+      background-color: #333;
       color: #fff;
       padding: 20px 0;
       text-align: center;
@@ -44,119 +54,129 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#">結構小教室</a>
-      <button class="navbar-toggler" 
-        type="button" data-bs-toggle="collapse" 
-        data-bs-target="#navMenu" aria-controls="navMenu" 
-        aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">峻國建設</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navMenu">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#features">特色</a></li>
-          <li class="nav-item"><a class="nav-link" href="#articles">文章</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">關於我們</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">服務項目</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">實績</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">聯絡我們</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Banner -->
   <section class="hero">
     <div class="container">
-      <h1>歡迎來到結構小教室</h1>
-      <p>教你如何理解與學習結構設計與相關知識</p>
+      <h1>峻國建設公司</h1>
+      <p>專業建設，品質保證，打造每一個安心家園</p>
     </div>
   </section>
 
-  <!-- Features -->
-  <section id="features" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">我們的特色</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/400x180" class="card-img-top" alt="Feature 1">
-            <div class="card-body">
-              <h5 class="card-title">實用教學</h5>
-              <p class="card-text">從基礎到進階，循序漸進講解結構概念。</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/400x180" class="card-img-top" alt="Feature 2">
-            <div class="card-body">
-              <h5 class="card-title">案例分享</h5>
-              <p class="card-text">實際案例分析幫助你理解應用與落地。</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/400x180" class="card-img-top" alt="Feature 3">
-            <div class="card-body">
-              <h5 class="card-title">教學影片</h5>
-              <p class="card-text">內含範例與步驟拆解的影音教學。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Articles -->
-  <section id="articles" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">熱門文章</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card">
-            <img src="https://via.placeholder.com/600x180" class="card-img-top" alt="Article 1">
-            <div class="card-body">
-              <h5 class="card-title">結構設計基礎入門</h5>
-              <p class="card-text">從零開始學結構設計，不再被術語困住。</p>
-              <a href="#" class="btn btn-primary">閱讀更多</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <img src="https://via.placeholder.com/600x180" class="card-img-top" alt="Article 2">
-            <div class="card-body">
-              <h5 class="card-title">實例解析：橋梁建構</h5>
-              <p class="card-text">解析橋梁結構的核心設計技巧與計算方法。</p>
-              <a href="#" class="btn btn-primary">閱讀更多</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
+  <!-- About Section -->
   <section id="about" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">關於我們</h2>
-      <p>這是一個專注結構教學的平台，提供豐富文章、範例與教學資源，適合所有想學結構的人。</p>
+      <h2 class="text-center">關於我們</h2>
+      <p class="text-center">峻國建設公司致力於住宅、商業與公共建設的開發與施工，秉持專業、品質、安全的理念，打造每個建案的最佳價值。</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">服務項目</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="https://picsum.photos/400/200?random=11" class="card-img-top" alt="住宅建設">
+            <div class="card-body">
+              <h5 class="card-title">住宅建設</h5>
+              <p class="card-text">提供高品質住宅建設服務，打造舒適安全的居住空間。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="https://picsum.photos/400/200?random=12" class="card-img-top" alt="商業建設">
+            <div class="card-body">
+              <h5 class="card-title">商業建設</h5>
+              <p class="card-text">專業商業建案規劃與施工，創造優質商業空間。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="https://picsum.photos/400/200?random=13" class="card-img-top" alt="公共工程">
+            <div class="card-body">
+              <h5 class="card-title">公共工程</h5>
+              <p class="card-text">承接公共工程與市政建設，注重品質與安全。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center">實績案例</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://picsum.photos/400/200?random=21" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">豪宅建案 A</h5>
+              <p class="card-text">位於市中心的豪宅開發，結合現代設計與安全施工。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://picsum.photos/400/200?random=22" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">商辦建案 B</h5>
+              <p class="card-text">創新商業辦公大樓，提供最佳商務空間。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://picsum.photos/400/200?random=23" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">公共工程 C</h5>
+              <p class="card-text">市政公共設施建設案例，兼具品質與安全。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">聯絡我們</h2>
+      <p class="text-center">電話：02-1234-5678 | Email: info@junkuo.com</p>
+      <p class="text-center">地址：台北市中正區XXX路XX號</p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2025 結構小教室. 版權所有.</p>
+      <p>© 2025 峻國建設公司. 版權所有</p>
     </div>
   </footer>
 
-
-  <!-- Bootstrap JS (選配，但導覽列會用到) -->
-  <script 
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js">
-  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
